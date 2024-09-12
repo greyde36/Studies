@@ -1,0 +1,31 @@
+.blue-with-boarder {
+	background: blue;
+	color: white;
+	border: 2px white dashed;
+}
+
+#second-paragraph {
+	background: red;
+	color: yellow;
+	border: 2px white dashed;
+/*	margin: 50px;*/
+	/*margin-left: 30px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 150px;*/
+/*	margin: 50px 100px 150px 30px;*/
+/*	margin: 300px 100px;*/
+	width: 50%;
+	margin: 30px auto;
+}
+#five-paragraph {
+	background: green;
+	color: black;
+	padding: 20px;
+	width: 30%;
+
+}
+
+body {
+	width: 50%;
+}

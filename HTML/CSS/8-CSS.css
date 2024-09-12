@@ -1,0 +1,24 @@
+.blue-with-boarder {
+	background: blue;
+	color: white;
+	border: 2px white dashed;
+	float: right;
+}
+
+#second-paragraph {
+	background: red;
+	color: yellow;
+	border: 2px white dashed;
+	width: 50%;
+	float: right;
+}
+#five-paragraph {
+	background: green;
+	color: black;
+	float: left;
+
+}
+
+.clearFloat{
+	clear: both;
+}
