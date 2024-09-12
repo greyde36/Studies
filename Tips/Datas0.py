@@ -11,7 +11,7 @@ print("Hello, my young friend!")
 print(type("Hello, my young friend!"))             #str (string) - строка
 print('"Hello, my young friend!"')                 # написание в кавычках
 print('Hello'+','+"my young friend!")              # написание слитно (сложение)
-print('1'+'1'+' 1')                                # concatenate
+print('1'+'1'+' 1')                                # Сложение (не +) 111<-
 print(True, False)
 print(type(True), type(False))                     # bool (boolean) - логический тип данных
 print(5>10, 10>5)
