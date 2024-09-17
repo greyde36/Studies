@@ -17,7 +17,7 @@ print(phone_book)
 a = phone_book.pop('Alex')                                   # Извлечение из словаря в переменную с присвоением
 print(a)
 list = [1,2,3]
-list.pop(0)
+list.pop(0)                                                  # удаление элемента
 print(list)
 print(phone_book.keys())                                     # список ключей в словаре
 print(phone_book.values())                                   # список значений в словаре
