@@ -1,4 +1,5 @@
 import random
+
 a = random.randint(3, 20)
 b = []
 c = []
