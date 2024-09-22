@@ -1,8 +1,8 @@
-# def print_params(*, a=1, b=2, c=3):             # после "*" параметры указываются явно
-#     print(a, b, c)
-#
-#
-# print_params(c='string', a=2, b=True)
+def print_params(*, a=1, b=2, c=3):             # после "*" параметры указываются явно
+     print(a, b, c)
+
+
+print_params(c='string', a=2, b=True)
 
 
 def func_with_params(a=2, b=2):
