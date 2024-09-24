@@ -11,6 +11,9 @@ food.remove('e')                                     # Удаляет объек
 print(food)
 print('coconut' in food)                             # Находится ли этот объект в списке (True, False)
 print('coconut' not in food)                         # Не находится ли этот объект в списке (True, False)
+sentence = "Python is a popular programming language. Python is versatile and easy to learn."
+count = sentence.count('Python')                     # Поиск слова и вывод количества повторений
+print(count)  # Вывод: 2
 print(food[2:5])                                     # Выбор по принципу строк
 print(len(food))                                     # Количество символов в переменной
 #####################################################################################################################
