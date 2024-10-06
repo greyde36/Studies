@@ -28,3 +28,7 @@ def func_with_params2(a, b=2, c=None):
 func_with_params2(3)                             # "С" всегда неизвестно, поэтому список создаётся заново
 func_with_params2(3)
 func_with_params2(3)
+
+txt='Нельзя отправлять письмо самому себе'
+print(txt.endswith('льз',0,5))                   # Проверка на что заканчивается и диапазон
+print(txt.endswith('льз','себе','бе'))           # True либо False, проверка на что заканчивается
