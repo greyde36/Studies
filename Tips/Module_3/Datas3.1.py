@@ -13,3 +13,8 @@ def printer():
 
 printer()
 print(a, b, 'Global')
+
+
+    # lambda - не имеет имени, содержит 1 строку кода, при создании не используется def
+result = lambda x, y: x+y
+print(result(5,5))

@@ -10,3 +10,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+from random import randint # импорт рандомного числа в указанном диапазоне
+print(randint(1,10))
