@@ -4,11 +4,11 @@ import tkinter as tk
 def get_values():
     num1 = int(number1_entry.get())
     num2 = int(number2_entry.get())
-    return num1, num2                                                           # Функция получение веденных переменных
+    return num1, num2                                                            # Функция получение веденных переменных
 
 
 def insert_values(value):
-    answer_entry.delete(0, 'end')                                      # Удаления старого ответа
+    answer_entry.delete(0, 'end')                                     # Удаления старого ответа
     answer_entry.insert(0, value)                                         # Функция вывода ответа
 
 
@@ -39,7 +39,7 @@ def mul():
 window = tk.Tk()                                                                 #   |->  #Создание окна
 window.title('Калькулятор')                                                      #   |  Название окна
 window.geometry("350x350")                                                       #   |  Размер окна
-window.resizable(False, False)                                       #   |  Запрет на изменения размеров окна
+window.resizable(False, False)                                      #   |  Запрет на изменения размеров окна
 button_add = tk.Button(window, text="+", width=2, height=2, command=add)         #   |  Создать кнопку
 button_add.place(x=100, y=200)                                                   #   |  Расположение кнопки по координатам
 button_sub = tk.Button(window, text="-", width=2, height=2, command=sub)         #   |
