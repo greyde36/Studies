@@ -7,3 +7,5 @@ b = square(2)
 print(a)
 print(b)
 print(globals())
+
+ # глобальные и локальные пространства
