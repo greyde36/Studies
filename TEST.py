@@ -4,22 +4,20 @@ from tkinter import *
 import tkinter.messagebox
 
 
-# выход из приложения
+# Выход из игры
 def exit_(event):
     root.destroy()
 
 
-# справка
+# Справка
 def pomosh(event):
     tkinter.messagebox.showinfo("Справка по игре.",
-                                "F1 - Инфа.\n" +
+                                "F1 - Информация\n" +
                                 "F12 - Новая игра.\n" +
-                                "Ecs - выход из игры.\n" +
-                                "Автор Сечак.Е.Н\n"
-                                "группа №1652\n")
+                                "Ecs - выход из игры.\n")
 
 
-# начать занаво
+#  Новая игра
 def begin(event):
     global butn
     global field
@@ -30,7 +28,7 @@ def begin(event):
     numButton = []
 
 
-# логика приложения
+# Проверка победителя
 def logik():
     global field
     global numButton
@@ -71,18 +69,18 @@ def logik():
             begin(None)
 
 
-# нажатие на кнопки
+# Нажатие
 def click(button, num):
     global numButton
     if num not in numButton:
         global XO
         if XO == 1:
-            button.config(text='Нолик')
+            button.config(text='О')
             button.config(bg='gold')
             field[num] = XO
             XO = 2
         else:
-            button.config(text='Крестик')
+            button.config(text='Х')
             button.config(bg='grey')
             field[num] = XO
             XO = 1
@@ -91,8 +89,8 @@ def click(button, num):
 
 
 field = [0, 0, 0, 0, 0, 0, 0, 0, 0]  # список значений 1 или 2
-XO = 1  # крестик - 1, нолик - 2
-numButton = []  # список нажатых кнопок
+XO = 1  # Крестики - 1, Нолики - 2
+numButton = []  # Список использованных кнопок
 
 root = Tk()
 root.title("Крестики-нолики")
@@ -131,12 +129,12 @@ ris8.place(x=162, y=162)
 
 butn = [ris0, ris1, ris2, ris3, ris4, ris5, ris6, ris7, ris8]
 
-# функциональные клавиши
+# Функциональные клавиши
 root.bind('<Escape>', exit_)
 root.bind('<F1>', pomosh)
 root.bind('<F12>', begin)
 
-# игра нажатием буков
+# Управление клавишами
 root.bind('<q>', lambda *ignore: click(ris0, 0))
 root.bind('<w>', lambda *ignore: click(ris1, 1))
 root.bind('<e>', lambda *ignore: click(ris2, 2))
