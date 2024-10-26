@@ -18,15 +18,13 @@ class House:
         self.name = name
         self.number_of_floors = number_of_floors
 
-    def __new__(cls, *args, **kwargs):
-        for key, value in kwargs.items():
-            setattr(cls, key, value)
-        cls.name = kwargs.get('name')
+    def __new__(cls, name, number_of_floors):
+        cls.name = name
+        House.houses_history.append(name)
 
-        return
 
     def __del__(self):
-        print('f{houses_history} снесён, но он останется в истории')
+        print(f'{self.name} снесён, но он останется в истории')
 
 
 h1 = House('ЖК Эльбрус', 10)
