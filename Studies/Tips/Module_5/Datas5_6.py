@@ -4,7 +4,7 @@ class User:
         print('Я в нью')
         # if cls.__instance__ is None:              # Если сделать так то ведет к одному месту в памяти
         #     cls.__instance__=super().__new__(cls)
-        return super().__new__(cls)
+        return super().__new__(cls)                 # Без этого new будет = None
 
     def __init__(self, *args, **kwargs):
         print('Я в ините')

@@ -18,10 +18,9 @@ class House:
         self.name = name
         self.number_of_floors = number_of_floors
 
-    def __new__(cls, name, number_of_floors):
-        cls.name = name
-        House.houses_history.append(name)
-
+    def __new__(cls, *args, **kwargs):                  # args = ' (ЖК Эльбрус, 10) ' и т.д
+        House.houses_history.append(args[0])            # выбор 1 значения из списка args
+        return super().__new__(cls)                     # Без этого new = None, код не будет продолжаться дальше
 
     def __del__(self):
         print(f'{self.name} снесён, но он останется в истории')
