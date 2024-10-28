@@ -1,5 +1,5 @@
 def Lucky_MSC(ticket):
-    if len(str(ticket)) % 2 != 0:
+    if len(str(ticket)) % 2 != 0:                   # Если поменять условия можно сократить код убрав лишние переменные
         print('Билет не считаем')
         quit()
     l_ticket = []
@@ -7,6 +7,7 @@ def Lucky_MSC(ticket):
         l_ticket.append(ticket % 10)
         ticket //= 10
     l_ticket.reverse()
+    # m = [int(i) for i in str(m)]                  # Альтернатива while
     part1 = []
     for i in range(0, len(l_ticket) // 2):
         part1.append(l_ticket[i])
