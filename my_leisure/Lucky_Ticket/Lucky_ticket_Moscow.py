@@ -20,4 +20,4 @@ def Lucky_MSC(ticket):
 
 
 if __name__ == "__main__":
-    Lucky_MSC(12345678)
+    Lucky_MSC(input("Введите номер вашего билет: "))
