@@ -19,8 +19,9 @@ class Shop:
         return product
 
     def add(self, *products):
+        current_products=self.get_products()
         for product in products:
-            if product.name not in self.get_products():
+            if str(product) not in current_products:
                 ovosh = open(self.__file_name, 'a')
                 ovosh.write(product.__str__() + '\n')
                 ovosh.close()
