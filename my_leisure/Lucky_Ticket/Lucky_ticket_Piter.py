@@ -8,7 +8,7 @@ def Lucky_SPB(ticket):
 
 
 if __name__ == "__main__":
-    # Lucky_SPB(input("Введите номер вашего билета: "))
+    #Lucky_SPB(input("Введите номер вашего билета: "))
     Lucky_SPB('12344321')
     Lucky_SPB('12341234')
     Lucky_SPB('1234123')

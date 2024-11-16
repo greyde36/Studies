@@ -8,7 +8,7 @@ def Lucky_KRD(ticket):
 
 
 if __name__ == "__main__":
-    # Lucky_KRD(input("Введите номер вашего билета: "))
+    #Lucky_KRD(input("Введите номер вашего билета: "))
     Lucky_KRD('12344321')
     Lucky_KRD('12341234')
     Lucky_KRD('1234123')
