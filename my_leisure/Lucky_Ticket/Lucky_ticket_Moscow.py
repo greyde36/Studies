@@ -1,13 +1,13 @@
 def Lucky_MSC(ticket):
-    if len(str(ticket)) % 2 != 0:                   # Если поменять условия можно сократить код убрав лишние переменные
-        print('Билет не считаем')
-        quit()
+    # if len(str(ticket)) % 2 != 0:                   # Если поменять условия можно сократить код убрав лишние переменные
+    #     print('Билет не считаем')
+    #     quit()
     # l_ticket = []
     # while ticket > 0:
     #     l_ticket.append(ticket % 10)
     #     ticket //= 10
     # l_ticket.reverse()
-    l_ticket = [i for i in ticket]                  # Альтернатива while # разбивает на числа в список l_ticket но оставляет тип str
+    l_ticket = [int(i) for i in ticket]             # Альтернатива while # разбивает на числа в список l_ticket но оставляет тип str
     part1 = []
     for i in range(0, len(l_ticket) // 2):
         part1.append(int(l_ticket[i]))              # меняем цифры с типа str на int
@@ -16,9 +16,14 @@ def Lucky_MSC(ticket):
         part2.append(int(l_ticket[i]))              # меняем цифры с типа str на int
     if sum(part1) == sum(part2):
         print('Билет счастливый')
+        return True
     else:
-        print('Билет несчастливый')
+        print('Билет не счастливый')
+        return False
 
 
 if __name__ == "__main__":
-    Lucky_MSC(input("Введите номер вашего билет: "))
+    #Lucky_MSC(input("Введите номер вашего билета: "))
+    Lucky_MSC('12344321')
+    Lucky_MSC('12345678')
+    Lucky_MSC('1234567')
