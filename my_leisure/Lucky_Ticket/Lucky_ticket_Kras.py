@@ -1,9 +1,9 @@
 def Lucky_KRD(ticket):
     if sum(int(i) for i in ticket[0:3]) == sum(int(i) for i in ticket[-3:]):
-        print('Билет счастливый')
+        print('Билет счастливый по Краснодарскому методу')
         return True
     else:
-        print('Билет не счастливый')
+        print('Билет не счастливый по Краснодарскому методу')
         return False
 
 

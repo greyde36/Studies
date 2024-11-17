@@ -1,9 +1,9 @@
 def Lucky_SPB(ticket):
     if sum(int(i) for i in ticket[0::2]) == sum(int(x) for x in ticket[1::2]):
-        print('Билет счастливый')
+        print('Билет счастливый по Питерскому методу')
         return True
     else:
-        print('Билет не счастливый')
+        print('Билет не счастливый по Питерскому методу')
         return False
 
 

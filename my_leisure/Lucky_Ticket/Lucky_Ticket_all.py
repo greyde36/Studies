@@ -4,15 +4,8 @@ from Lucky_ticket_Piter import Lucky_SPB as LSPB
 
 
 def Mega_Lucky(ticket):
-    result = [LMSC, LKRD, LKRD]
-    if all(result):
-        print(result)
+    if LMSC(ticket) == True and LKRD(ticket) == True and LSPB(ticket) == True:
         print('Пора в казино за большим кушем, билет счастливый по всем методам!')
-    else:
-        LMSC(ticket)
-        LKRD(ticket)
-        LSPB(ticket)
 
 
 Mega_Lucky(input("Введите номер вашего билета: "))
-# функции возвращают 16-ричный код вместо True

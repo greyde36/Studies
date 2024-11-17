@@ -15,10 +15,10 @@ def Lucky_MSC(ticket):
     for i in range(len(l_ticket) // 2, len(l_ticket)):
         part2.append(int(l_ticket[i]))              # меняем цифры с типа str на int
     if sum(part1) == sum(part2):
-        print('Билет счастливый')
+        print('Билет счастливый по Московскому методу')
         return True
     else:
-        print('Билет не счастливый')
+        print('Билет не счастливый по Московскому методу')
         return False
 
 
