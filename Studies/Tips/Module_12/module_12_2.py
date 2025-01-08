@@ -19,7 +19,9 @@ class CalcTest(unittest.TestCase):
     def tearDownClass(cls):             # аналогично setUp только в конце 1 раз
         pass
 
-
+    @unittest.skip("Причина пропуска!")
+    # @unittest.skipIf(True, "Пропустить если да")
+    # @unittest.skipUnless(True ,"Пропустить если нет")
     def test_add(self):
         """
         Test for add function in calculator
