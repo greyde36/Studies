@@ -1,0 +1,7 @@
+2025-01-08 17:57:59,763 | INFO | Successful divide 3/4
+2025-01-08 17:57:59,763 | ERROR | HA 0 HE DELI!!!
+Traceback (most recent call last):
+  File "C:\Users\Greyde\Desktop\Work\Urban\Studies\Tips\Module_12\module_12_4.py", line 18, in div
+    a/b
+    ~^~
+ZeroDivisionError: division by zero
