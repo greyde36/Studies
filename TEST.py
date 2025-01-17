@@ -34,6 +34,7 @@ def logik():
     global numButton
     if len(numButton) == 9:
         tkinter.messagebox.showinfo("Конец игры", "  Ничья!!!  ")
+        begin(None)
     else:
         end = False
         if field[0] == field[1] == field[2] > 0:
